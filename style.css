@@ -6,6 +6,9 @@ body{
     font-weight: 100;
     margin-top: 6cm;
     font-size: large;
+    display: flexbox;
+    justify-content: center;
+    
 }
 .botao {
     background-color: #2b0bac;
@@ -16,3 +19,19 @@ body{
     border-radius: 10px;
     
 }
+.numeros{
+    background-color: #6845f3;
+    color: #f4efe8;
+    box-sizing: inherit;
+    width: 3em;;
+    height: 3em;
+    border-radius: 10px;
+}
+
+.entrada {
+    background-color: azure;
+}
+/*para selecionar::after
+
+id = #nome_id
+class = .nome_class*/
