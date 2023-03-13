@@ -1,111 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>                  
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <!-- defer = indica ao navegador que o script em questão deve ser carregado de forma assíncrona, ou seja, enquanto a página continua sendo carregada.-->
 </head>
 <body>
+    <div id="calc">
+        <h3>Calculadora</h3>
+        <!--painel-->
+        <div id="operations">
+            <!-- o que já foi digitado-->
+            <div id="previous-operation"></div>
+            <!--inserindo atualmente-->
+            <div id="current-operation"></div>
+        </div>
+        <!--botões-->
+        <div id="buttons-container">
+            <button>CE</button>
+            <button>C</button>
+            <button>DEL</button>
+            <button>/</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button>*</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button>-</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button>+</button>
+            <button class="number">0</button>
+            <button class="number">.</button>
+            <button id="equal-btn">=</button>
 
-  
-    <h1>Calculadora Básica</h1>
-    <input type="text" id = 'res'>
-    <!--Arquivo js-->
-    <script src = 'script.js' ></script>
-    <div>
-        <input type="button" value = 'C' class="botao" onclick = "limpar()">
-        <input type="button" value = '%' class="botao" class="botao" onclick = "Resolver('%')">
-        <input type="button" value = '←' class="botao" onclick ="Voltar('←')">
-        <input type="button" value = '/' class="botao" onclick = "Resolver('/')">
-        <br>
-        <input type="button" value = '7' class="numeros" onclick = "Resolver('7')">
-        <input type="button" value = '8' class="numeros" onclick = "Resolver('8')">
-        <input type="button" value = '9' class="numeros" onclick = "Resolver('9')">
-        <input type="button" value = 'x' class="botao" onclick = "Resolver('*')">
-        <br>
-        <input type="button" value = '4' class="numeros" onclick = "Resolver('4')">
-        <input type="button" value = '5' class="numeros" onclick = "Resolver('5')">
-        <input type="button" value = '6' class="numeros" onclick = "Resolver('6')">
-        <input type="button" value = '-' class="botao" onclick = "Resolver('-')">
-        <br>
-        <input type="button" value = '1' class="numeros" onclick = "Resolver('1')">
-        <input type="button" value = '2' class="numeros" onclick = "Resolver('2')">
-        <input type="button" value = '3' class="numeros" onclick = "Resolver('3')">
-        <input type="button" value = '+' class="botao" onclick = "Resolver('+')">
-        <br>
-        <input type="button" value = '00'class="numeros" onclick = "Resolver('00')">
-        <input type="button" value = '0' class="numeros" onclick = "Resolver('0')">
-        <input type="button" value = '.' class="botao"onclick = "Resolver('.')">
-        <input type="button" value = '=' class="botao" onclick = "Resultado()">
-     </div>
-
-
-    <!--
-    <form>
-        <label> Número 1:</label>
-        <input type="text" id="num1" class="entrada"><BR></BR>
-        <label> Número 2:</label>
-        <input type="text" id="num2" class="entrada">
-        <br><br>
-        <button type="button" id="soma" onclick="somar()" class="botao"> + </button>
-        <button type="button" id="subtrai" onclick="subtrair()" class="botao"> - </button>
-        <button type="button" id="multiplica" onclick="multiplicar()" class="botao"> * </button>
-        <button type="button" id="divide" onclick="dvidir()" class="botao"> / </button>
-        <button type="reset" id="limpar" onclick="limpar()" class="botao"> C </button>
-        <br><br>
-        <label > Resultado: </label>
-        <input type="text" id="resp" readonly >
-    </form>
-
-    
-    <script>
-        function somar(){
-            var num1, num2, resp;
-
-            num1 = parseFloat(document.getElementById("num1").value);
-            num2 = parseFloat(document.getElementById("num2").value);
-            resp = num1 + num2;
-
-            document.getElementById("resp").value = resp;
-        }
-        function subtrair(){
-            var num1, num2, resp;
-
-            num1 = parseFloat(document.getElementById("num1").value);
-            num2 = parseFloat(document.getElementById("num2").value);
-            resp = num1 - num2;
-
-            document.getElementById("resp").value = resp;
-        }
-        function multiplicar(){
-            var num1, num2, resp;
-
-            num1 = parseFloat(document.getElementById("num1").value);
-            num2 = parseFloat(document.getElementById("num2").value);
-            resp = num1 * num2;
-
-            document.getElementById("resp").value = resp;
-        }
-        function dividir(){
-            var num1, num2, resp;
-
-            num1 = parseFloat(document.getElementById("num1").value);
-            num2 = parseFloat(document.getElementById("num2").value);
-            resp = num1 / num2;
-
-            document.getElementById("resp").value = resp;
-        }
-        function limpar(){
-            var num1, num2, resp;
-            document.getElementById("num1").value ='';
-            document.getElementById("num2").value ='';
-            document.getElementById("resp").value ='';
-        }
-
-        
-    </script> 
--->
+        </div>
+    </div>
 </body>
 </html>
