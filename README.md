@@ -1,5 +1,4 @@
-# ellenolv-Fatec-2023-calculadora :U+1F5A9
-
+# ellenolv-Fatec-2023-calculadora 
 Olá, seja bem-vindo ao meu repositório no Github!
 Aqui você encontrará uma calculadora que desenvolvi utilizando **HTML, CSS e JS**. 
 
